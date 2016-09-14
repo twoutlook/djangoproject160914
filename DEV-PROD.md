@@ -62,6 +62,8 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 
 /etc/apache2/sites-enabled/000-default.conf, 增列
 
+個人偏好使用 FileZilla 下載到本機應對的檔案夾裡修改再上傳
+
     <VirtualHost *:8080>
       Alias /static /home/demo/webapp/djangoproject160914/static
       <Directory /home/demo/webapp/djangoproject160914/static>
