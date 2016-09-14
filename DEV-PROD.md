@@ -50,8 +50,117 @@ Got instruction from [askubuntu](http://askubuntu.com/questions/682869/how-do-i-
     sudo add-apt-repository ppa:fkrull/deadsnakes
     sudo apt-get update
     sudo apt-get install python3.5
+
+## hicloud, Setup virtual envrionment just same as c9.io
+
+    sudo apt-get install python3.5-venv
+    python3.5 -m venv myvenv
+    source myvenv/bin/activate
+    pip install django 
+
+
+## hicloud, 
+Need to allow 8000 for testing 
+    demo@chttl-8acc489f1587c5dc:~$ sudo ufw status
+    [sudo] password for demo:
+    Status: active
     
-Setup virtual envrionment just same as c9.io
+    To                         Action      From
+    --                         ------      ----
+    22                         ALLOW       Anywhere
+    80                         ALLOW       Anywhere
+    21/tcp                     ALLOW       Anywhere
+    10000/tcp                  ALLOW       Anywhere
+    22 (v6)                    ALLOW       Anywhere (v6)
+    80 (v6)                    ALLOW       Anywhere (v6)
+    21/tcp (v6)                ALLOW       Anywhere (v6)
+    10000/tcp (v6)             ALLOW       Anywhere (v6)
+    
+    demo@chttl-8acc489f1587c5dc:~$
+
+
+For this case, ufw is better than editing iptables
+
+    demo@chttl-8acc489f1587c5dc:~$ sudo ufw allow 8000
+    Rule added
+    Rule added (v6)
+    demo@chttl-8acc489f1587c5dc:~$ sudo ufw status
+    Status: active
+    
+    To                         Action      From
+    --                         ------      ----
+    22                         ALLOW       Anywhere
+    80                         ALLOW       Anywhere
+    21/tcp                     ALLOW       Anywhere
+    10000/tcp                  ALLOW       Anywhere
+    8000                       ALLOW       Anywhere
+    22 (v6)                    ALLOW       Anywhere (v6)
+    80 (v6)                    ALLOW       Anywhere (v6)
+    21/tcp (v6)                ALLOW       Anywhere (v6)
+    10000/tcp (v6)             ALLOW       Anywhere (v6)
+    8000 (v6)                  ALLOW       Anywhere (v6)
+
+## wsgi is ready
+
+    demo@chttl-8acc489f1587c5dc:~$ apt list | grep libapache2-mod-wsgi-py3
+    
+    WARNING: apt does not have a stable CLI interface yet. Use with caution in scripts.
+    
+    libapache2-mod-wsgi-py3/trusty-updates,trusty-security 3.4-4ubuntu2.1.14.04.2 amd64
+    demo@chttl-8acc489f1587c5dc:~$
+
+## manage.py --help to see commands
+./manage.py collectstatic
+
+
+
+## My first work wsgi was usig [Digitalocean's article](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04)
+
+
+    <VirtualHost *:80>
+    Alias /static /home/demo/djangogirls/djangogirls004/static
+    <Directory /home/demo/djangogirls/djangogirls004/static>
+    Require all granted
+    </Directory>
+    
+    <Directory /home/demo/djangogirls/djangogirls004/mysite>
+    <Files wsgi.py>
+    Require all granted
+    </Files>
+    </Directory>
+    
+    WSGIDaemonProcess myproject python-path=/home/demo/djangogirls/djangogirls004:/home/demo/djangogirls/myvenv/lib/python3.5/site-packages
+    WSGIProcessGroup myproject
+    WSGIScriptAlias / /home/demo/djangogirls/djangogirls004/mysite/wsgi.py
+    </VirtualHost>
+
+For webapp case, to modifiy
+
+    <VirtualHost *:8080>
+    Alias /static /home/demo/webapp/djangoproject160914/static
+    <Directory /home/demo/webapp/djangoproject160914/static>
+    Require all granted
+    </Directory>
+    
+    <Directory /home/demo/webapp/djangoproject160914/mysite>
+    <Files wsgi.py>
+    Require all granted
+    </Files>
+    </Directory>
+    
+    WSGIDaemonProcess myproject python-path=/home/demo/webapp/djangoproject160914:/home/demo/webapp/myvenv/lib/python3.5/site-packages
+    WSGIProcessGroup myproject
+    WSGIScriptAlias / /home/demo/webapp/djangoproject160914/mysite/wsgi.py
+    </VirtualHost>
+
+
+# According to [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html)
+It can work for multiple ports.
+We will keep 80 as traditional web and 8080 for Python-Django
+
+# restart apache server
+
+
 
 # c9.io
 
