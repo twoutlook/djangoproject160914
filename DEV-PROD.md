@@ -5,8 +5,19 @@
 3. in virtual environment
 
 # Plan ahead
+
+
 1. Don't put myvenv to github
-2. Follow Djangogirls' advice
+2. Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/)
+
+create .gitignore with content:
+    
+    *.pyc
+    __pycache__
+    myvenv
+    db.sqlite3
+    /static
+    .DS_Store
 
 
 ## c9.io, Python 3.5  
