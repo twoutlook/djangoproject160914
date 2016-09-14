@@ -39,7 +39,10 @@ Inspired by [djangogirls' django_installation ](http://tutorial.djangogirls.org/
 
     sudo apt-get install python3.5-venv
     python3.5 -m venv myvenv
-    
+    source myvenv/bin/activate
+    pip install django 
+
+Current (2016-09-14) latest Django version is 1.10.1
     
 ## hicloud, install Python 3.5 on Ubuntu 14.04     
 Got instruction from [askubuntu](http://askubuntu.com/questions/682869/how-do-i-install-newer-python-versions-using-apt-get)
