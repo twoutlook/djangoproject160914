@@ -84,7 +84,7 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 - [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html)
 - [Djangoproject] (https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/modwsgi/)
 
-# restart apache server
+# 更改設定必需重起 apache server
     sudo service apache2 restart
 可以 PuTTY 登入後下指令，也可以在端口 10000 的 Webmin 下指令。 
 
