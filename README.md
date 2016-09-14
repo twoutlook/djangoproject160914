@@ -8,7 +8,7 @@
     1 virtual core [equivalent to 1GHz CPU capacity] ,1 GB RAM
     30 GB
     
-210.65.11.216
+[210.65.11.216](http://210.65.11.216)
 
 # Github
 https://github.com/twoutlook/djangoproject160914
