@@ -4,6 +4,11 @@
 2. Django 1.10
 3. in virtual environment
 
+# Plan ahead
+1. Don't put myvenv to github
+2. Follow Djangogirls' advice
+
+
 ## c9.io, Python 3.5  
 http://tutorial.djangogirls.org/en/python_installation/
   
