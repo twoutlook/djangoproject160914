@@ -25,18 +25,11 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 
 
 
-## c9.io, Python 3.5  
-http://tutorial.djangogirls.org/en/python_installation/
-  
-    twoutlook:~/workspace (master) $ python --version
-    Python 2.7.6
-    twoutlook:~/workspace (master) $ python3 --version
-    Python 3.4.3
-    twoutlook:~/workspace (master) $ 
+# 在 c9.io, 安裝 Python 3.5  
     sudo apt-get install python3.5
-    twoutlook:~/workspace (master) $ python3.5 --version
-    Python 3.5.2
-    
+
+經過嘗試可以這麼安裝, 回頭看 [djangogirls' django_installation ](http://tutorial.djangogirls.org/en/django_installation/  )，有提到。
+
 ## c9.io, Python 3.5 virtual environment    
 Inspired by [djangogirls' django_installation ](http://tutorial.djangogirls.org/en/django_installation/  )
   
