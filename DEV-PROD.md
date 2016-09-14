@@ -6,7 +6,9 @@
 # Source code control plan ahead
 
 
-Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), create .gitignore with contents:
+依照 [Djangogirls] (http://tutorial.djangogirls.org/en/deploy/) 的教程
+
+新建 .gitignore 檔案，內容如後:
     
     *.pyc
     __pycache__
