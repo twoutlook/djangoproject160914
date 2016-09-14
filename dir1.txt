@@ -1,0 +1,15 @@
+total 568
+drwxr-xr-x  6 ubuntu ubuntu   4096 Sep 14 03:10 ./
+drwxr-xr-x 19 ubuntu ubuntu   4096 Sep 14 03:02 ../
+drwxr-xr-x  3 ubuntu ubuntu   4096 Sep 14 00:22 .c9/
+drwxr-xr-x  8 ubuntu ubuntu   4096 Sep 14 03:07 .git/
+-rw-r--r--  1 ubuntu ubuntu     53 Sep 14 02:58 .gitignore
+-rw-r--r--  1 ubuntu ubuntu   1449 Sep 14 03:04 DEV-PROD.md
+-rw-r--r--  1 ubuntu ubuntu    143 Sep 14 00:22 NOTE.md
+-rw-r--r--  1 ubuntu ubuntu    499 Sep 14 00:49 README.md
+-rw-r--r--  1 ubuntu ubuntu      0 Sep 14 03:10 dir1.txt
+-rwxr-xr-x  1 ubuntu ubuntu    804 Sep 14 03:10 manage.py*
+drwxr-xr-x  2 ubuntu ubuntu   4096 Sep 14 03:10 mysite/
+drwxr-xr-x  5 ubuntu ubuntu   4096 Sep 14 03:02 myvenv/
+-rw-r--r--  1 ubuntu ubuntu 527024 Sep 14 03:05 myvenv.txt
+-rw-r--r--  1 ubuntu ubuntu     39 Sep 14 03:10 start-Django.md
