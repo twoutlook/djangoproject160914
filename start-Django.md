@@ -26,4 +26,30 @@
     twoutlook:~/workspace (master) $ source myvenv/bin/activate
     (myvenv) twoutlook:~/workspace (master) $ 
 
+## PuTTY hicloud
+create a new Seesion, Appearance Font to 14-point
+when open, copy/paste password --- I typed password before, Not necessary
+top to show system info and to avoid short time disconnected
+q to gain command line
+  
+### create non-root demo
+Follow [Digitalocean's tutorial](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04)
+
+    adduser demo
+    gpasswd -a demo sudo
+    su - demo
+    exit
+### install git beforehand
+    sudo apt-get install git
+
+### decide to use djangoproject 
+
+    mkdir webapp
+    cd webapp
+    git clone https://github.com/twoutlook/djangoproject160914.git
     
+### install python3.5 on Ubuntu 14.04
+http://askubuntu.com/questions/682869/how-do-i-install-newer-python-versions-using-apt-get
+    sudo add-apt-repository ppa:fkrull/deadsnakes
+    sudo apt-get update
+    sudo apt-get install python3.5
