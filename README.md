@@ -1,7 +1,7 @@
 # 開發和正式環境的詳細調試，參考, [這裡](DEV-PROD.md)
 
 
-# hicloud VM 規格, 直接IP訪問 [210.65.11.216](http://210.65.11.216)
+# hicloud VM 規格, 直接IP訪問 [210.65.11.216](http://210.65.11.216), [Django 項目](http://210.65.11.216:8080)
     Standard Mini-Promotions(Linux)
     ubuntu 14.04 eng, 64bit
     LAMP(Apache2.4+MySQL5.5+PHP5.5) with Webmin
