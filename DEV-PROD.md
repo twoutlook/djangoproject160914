@@ -80,7 +80,7 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
     </VirtualHost>
 
 參考:
-- My first working wsgi, [Digitalocean's article](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04)
+- [Digitalocean's article](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04), 第一次正式境成功運行就是參考這則文檔。
 - [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html)
 - [Djangoproject] (https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/modwsgi/)
 
