@@ -54,10 +54,13 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 - 開通 8080 端口
 - 安裝 libapache2-mod-wsgi-py3
 
-# Apache 的設定
+# hicloud, Apache 的設定
 
+/etc/apache2
 
-For webapp case, to modifiy
+    Listen 8080
+
+/etc/apache2/sites-enabled/000-default.conf
 
     <VirtualHost *:8080>
       Alias /static /home/demo/webapp/djangoproject160914/static
