@@ -7,9 +7,7 @@
 # Plan ahead
 
 
-Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/)
-
-create .gitignore with content:
+Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), create .gitignore with contents:
     
     *.pyc
     __pycache__
@@ -19,8 +17,10 @@ create .gitignore with content:
     .DS_Store
 
 其中有三樣是開發者掌控不需上傳到 Github
-myvenv 是 virtual environment 的檔案夾
-db.sqlite3 在開發測試做的不要上傳，就不會在部署時覆蓋掉正式環境的數據
+- myvenv 是 virtual environment 的檔案夾
+- db.sqlite3 在開發測試做的不要上傳，就不會在部署時覆蓋掉正式環境的數據
+- static 是透過 ./manage.py collectstatic 生成的
+
 
 
 
