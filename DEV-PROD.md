@@ -100,7 +100,7 @@ For this case, ufw is better than editing iptables
     10000/tcp (v6)             ALLOW       Anywhere (v6)
     8000 (v6)                  ALLOW       Anywhere (v6)
 
-## wsgi is ready
+## wsgi is ready? NOT REALLY
 
     demo@chttl-8acc489f1587c5dc:~$ apt list | grep libapache2-mod-wsgi-py3
     
@@ -108,6 +108,30 @@ For this case, ufw is better than editing iptables
     
     libapache2-mod-wsgi-py3/trusty-updates,trusty-security 3.4-4ubuntu2.1.14.04.2 amd64
     demo@chttl-8acc489f1587c5dc:~$
+
+## Need to install libapache2-mod-wsgi-py3
+
+    (myvenv) demo@chttl-8acc489f1587c5dc:~/webapp$ sudo apt-get install libapache2-mod-wsgi-py3
+    Reading package lists... Done
+    Building dependency tree
+    Reading state information... Done
+    The following packages were automatically installed and are no longer required:
+      linux-headers-3.13.0-32 linux-headers-3.13.0-32-generic
+      linux-headers-3.13.0-35 linux-headers-3.13.0-35-generic
+      linux-image-3.13.0-32-generic linux-image-3.13.0-35-generic
+      linux-image-extra-3.13.0-32-generic linux-image-extra-3.13.0-35-generic
+    Use 'apt-get autoremove' to remove them.
+    The following extra packages will be installed:
+      libpython3.4
+    The following NEW packages will be installed:
+      libapache2-mod-wsgi-py3 libpython3.4
+    0 upgraded, 2 newly installed, 0 to remove and 3 not upgraded.
+    Need to get 1,376 kB of archives.
+    After this operation, 4,644 kB of additional disk space will be used.
+    Do you want to continue? [Y/n] Y
+
+
+
 
 ## manage.py --help to see commands
 ./manage.py collectstatic
