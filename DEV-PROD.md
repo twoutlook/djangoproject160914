@@ -79,13 +79,14 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
       WSGIScriptAlias / /home/demo/webapp/djangoproject160914/mysite/wsgi.py
     </VirtualHost>
 
-
-# According to [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html)
-It can work for multiple ports.
-We will keep 80 as traditional web and 8080 for Python-Django
+參考:
+- My first working wsgi, [Digitalocean's article](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04)
+- [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html)
+- [Djangoproject] (https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/modwsgi/)
 
 # restart apache server
-
+    sudo service apache2 restart
+可以 PuTTY 登入後下指令，也可以在端口 10000 的 Webmin 下指令。 
 
 
 # c9.io
