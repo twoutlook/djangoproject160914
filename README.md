@@ -17,12 +17,13 @@ https://github.com/twoutlook/djangoproject160914
 為方便自動上傳更新，在左邊的
 Repositories, 先選 Github 項目, 再 clone to edit 
 
-
+可以開多個，目前使用這個
+- https://ide.c9.io/twoutlook/djangoproject160914-dev2
 
 # Hostmonster
 
 
-將域名 twcloudwebapp.com 指向 hicloud IP, 
+將域名 twcloudwebapp.com 指向 hicloud 給的 IP, 
 - 2016-12-18 到期, type: Unassigned, 因此沒有預設網站。
 - DNS Zone Editor, 單一修改 A (Host) $, 其它不動。  
 
