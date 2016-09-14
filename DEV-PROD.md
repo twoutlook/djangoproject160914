@@ -83,8 +83,8 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 
 參考:
 - [Digitalocean's article](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod_wsgi-on-ubuntu-14-04), 第一次正式環境調試成功運行就是參考這則文檔。
-- [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html)
-- [Djangoproject] (https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/modwsgi/)
+- [Apache 2.4 doc] (http://httpd.apache.org/docs/2.4/vhosts/examples.html), 確認多域名，多IP, 多端口都可以實現。
+- [Djangoproject] (https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/modwsgi/), 一開始沒有概念並沒有理解, 懂了就看懂了。
 
 # 更改設定必需重起 apache server
     sudo service apache2 restart
