@@ -20,4 +20,9 @@ Repositories, 先選 Github 項目, 再 clone to edit
 
 
 # Hostmonster
-DNS Zone Editor, change A (Host) $ entry with hicloud IP  
+
+
+將域名 twcloudwebapp.com 指向 hicloud IP, 
+- 2016-12-18 到期, type: Unassigned, 因此沒有預設網站。
+- DNS Zone Editor, 單一修改 A (Host) $, 其它不動。  
+
