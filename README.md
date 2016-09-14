@@ -8,7 +8,7 @@
     1 virtual core [equivalent to 1GHz CPU capacity] ,1 GB RAM
     30 GB
     
-    210.65.11.216
+210.65.11.216
 
 # Github
 https://github.com/twoutlook/djangoproject160914
@@ -23,7 +23,7 @@ Repositories, 先選 Github 項目, 再 clone to edit
 # Hostmonster
 
 
-將域名 twcloudwebapp.com 指向 hicloud 給的 IP, 
+將域名 [twcloudwebapp.com](http://www.twcloudapp.com) 指向 hicloud 給的 IP, 
 - 2016-12-18 到期, type: Unassigned, 因此沒有預設網站。
 - DNS Zone Editor, 單一修改 A (Host) $, 其它不動。  
 
