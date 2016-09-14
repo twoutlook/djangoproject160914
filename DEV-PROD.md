@@ -94,14 +94,8 @@
 
 
 # c9.io
+在 Repositories 先選再 clone to edit
 
 
-
-# hicloud LAMP(Apache2.4+MySQL5.5+PHP5.5) with Webmin
-
-## Putty
-
-## Webmin
-
-
-## FileZilla 
+# hicloud VM
+LAMP(Apache2.4+MySQL5.5+PHP5.5) with Webmin
