@@ -29,10 +29,18 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 
 經過嘗試可以這麼安裝, 回頭看 [djangogirls' django_installation ](http://tutorial.djangogirls.org/en/django_installation/  )，有提到。
 
-## c9.io, Python 3.5 virtual environment    
+# 在 hicloud Ubuntu 14.04, 安裝 Python 3.5 on    
+根據 [askubuntu](http://askubuntu.com/questions/682869/how-do-i-install-newer-python-versions-using-apt-get)
+    
+    sudo add-apt-repository ppa:fkrull/deadsnakes
+    sudo apt-get update
+    sudo apt-get install python3.5
+
+
+
+# 安裝 virtual environment, 在此 c9.io 和 hicloud 已相同    
 Inspired by [djangogirls' django_installation ](http://tutorial.djangogirls.org/en/django_installation/  )
   
-
 
     sudo apt-get install python3.5-venv
     python3.5 -m venv myvenv
@@ -41,12 +49,6 @@ Inspired by [djangogirls' django_installation ](http://tutorial.djangogirls.org/
 
 Current (2016-09-14) latest Django version is 1.10.1
     
-## hicloud, install Python 3.5 on Ubuntu 14.04     
-Got instruction from [askubuntu](http://askubuntu.com/questions/682869/how-do-i-install-newer-python-versions-using-apt-get)
-    
-    sudo add-apt-repository ppa:fkrull/deadsnakes
-    sudo apt-get update
-    sudo apt-get install python3.5
 
 ## hicloud, Setup virtual envrionment just same as c9.io
 
