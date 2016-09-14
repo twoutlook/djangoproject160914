@@ -51,6 +51,8 @@ Got instruction from [askubuntu](http://askubuntu.com/questions/682869/how-do-i-
     sudo apt-get update
     sudo apt-get install python3.5
     
+Setup virtual envrionment just same as c9.io
+
 # c9.io
 
 
