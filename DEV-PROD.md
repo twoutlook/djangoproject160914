@@ -1,10 +1,9 @@
 # Development and Product environment
+要確定在開發和正式環境有著一樣的virtual environment:
+- Python 3.5
+- Django 1.10
 
-1. Python 3.5
-2. Django 1.10
-3. in virtual environment
-
-# Plan ahead
+# Source code control plan ahead
 
 
 Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), create .gitignore with contents:
