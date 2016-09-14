@@ -60,20 +60,20 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 For webapp case, to modifiy
 
     <VirtualHost *:8080>
-    Alias /static /home/demo/webapp/djangoproject160914/static
-    <Directory /home/demo/webapp/djangoproject160914/static>
-    Require all granted
-    </Directory>
+      Alias /static /home/demo/webapp/djangoproject160914/static
+      <Directory /home/demo/webapp/djangoproject160914/static>
+        Require all granted
+      </Directory>
     
-    <Directory /home/demo/webapp/djangoproject160914/mysite>
-    <Files wsgi.py>
-    Require all granted
-    </Files>
-    </Directory>
+      <Directory /home/demo/webapp/djangoproject160914/mysite>
+        <Files wsgi.py>
+          Require all granted
+        </Files>
+      </Directory>
     
-    WSGIDaemonProcess myproject python-path=/home/demo/webapp/djangoproject160914:/home/demo/webapp/myvenv/lib/python3.5/site-packages
-    WSGIProcessGroup myproject
-    WSGIScriptAlias / /home/demo/webapp/djangoproject160914/mysite/wsgi.py
+      WSGIDaemonProcess myproject python-path=/home/demo/webapp/djangoproject160914:/home/demo/webapp/myvenv/lib/python3.5/site-packages
+      WSGIProcessGroup myproject
+      WSGIScriptAlias / /home/demo/webapp/djangoproject160914/mysite/wsgi.py
     </VirtualHost>
 
 
