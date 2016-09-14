@@ -56,11 +56,11 @@ Follow [Djangogirls' advice] (http://tutorial.djangogirls.org/en/deploy/), creat
 
 # hicloud, Apache 的設定
 
-/etc/apache2
+/etc/apache2, 增列
 
     Listen 8080
 
-/etc/apache2/sites-enabled/000-default.conf
+/etc/apache2/sites-enabled/000-default.conf, 增列
 
     <VirtualHost *:8080>
       Alias /static /home/demo/webapp/djangoproject160914/static
