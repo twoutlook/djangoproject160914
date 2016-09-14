@@ -1,3 +1,5 @@
+# 開發和正式環境的詳細調試，參考, [這裡](DEV-PROD.md)
+
 # Github
 https://github.com/twoutlook/djangoproject160914
 
